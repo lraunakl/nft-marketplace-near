@@ -23,8 +23,8 @@ module.exports = {
     ]
   },
   networks: {
-    testnet_aurora: {
-      url: 'https://testnet.aurora.dev',
+    fuji: {
+      url: 'https://api.avax-test.network/ext/bc/C/rpc',
       accounts: [`0x${AURORA_PRIVATE_KEY}`]
     },
     // develop_aurora: {

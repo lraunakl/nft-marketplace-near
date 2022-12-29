@@ -33,7 +33,7 @@
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.4",
     "evm-bn": "^1.1.1",
-    "hardhat": "^2.8.4",
+    "hardhat": "^2.12.4",
     "ipfs-http-client": "^56.0.1",
     "npm-force-resolutions": "^0.0.10",
     "react": "^17.0.2",

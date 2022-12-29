@@ -62,7 +62,7 @@ export default function Home() {
         <div style={{display: "inline-flex", alignItems: "center"}}>
           <div style={{width: "50%", padding: "0px 48px"}}>
             <h1 style={{fontSize: 40, fontWeight: 700, marginBottom: 32, lineHeight: 1.2}}>Discover, collect, and sell extraordinary NFTs</h1>
-            <h2 style={{marginBottom: 48}}>OpenSea <span style={{color: "red"}}>clone</span> NFT marketplace <span style={{fontWeight: 700}}>dApp</span> for <a href="https://aurora.dev/" target="_blank"  style={{textDecoration:"none", color:"#2196f3"}}>Aurora EVM</a> implemented on the <a href="https://near.org/" target="_blank"  style={{textDecoration:"none", color:"#2196f3"}}>NEAR Blockchain</a></h2>
+            <h2 style={{marginBottom: 48}}>AVAX <span style={{color: "red"}}>powered</span> NFT marketplace <span style={{fontWeight: 700}}>dApp</span> for <a href="https://aurora.dev/" target="_blank"  style={{textDecoration:"none", color:"#2196f3"}}>EVM</a> implemented on the <a href="https://near.org/" target="_blank"  style={{textDecoration:"none", color:"#2196f3"}}>Avalanche Blockchain</a></h2>
             <CustomButton
               variant="contained"
               sx={{padding: "8px 48px"}}
@@ -108,8 +108,8 @@ export default function Home() {
           </div>
           <div style={{display:"flex", justifyContent: "center"}}>  
             <div href="" style={{display: "flex", flexDirection: "row", wrapFlex: "wrap"}}>
-              {imgComp(Near, "Near", 40, "black", "https://near.org/")}
-              {imgComp(Aurora, "Aurora", 45, "#76ff03", "https://aurora.dev/")}
+              {/* {imgComp(Near, "Near", 40, "black", "https://near.org/")}
+              {imgComp(Aurora, "Aurora", 45, "#76ff03", "https://aurora.dev/")} */}
               {imgComp(Metamask, "Metamask", 45, "black", "https://metamask.io/")}
               {imgComp(Solidity, "Solidity", 45, "black", "https://docs.soliditylang.org/en/v0.8.12/")}
               {imgComp(Ethers, "Ethers", 35, "#2535a0", "https://docs.ethers.io/v5/")}

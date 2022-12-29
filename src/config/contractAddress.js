@@ -1,3 +1,3 @@
-exports.factoryContractAddress = "0xf5351DFC815b83289d1b4aDeC5c6A423eb523729";
-exports.nftMarketplaceAddress = "0x2b82bedAaB3C8dCD16b71a5cc7AB119Afa6D7D2C";
+exports.factoryContractAddress = "0xA76945B0c61d5D59cdf5dE8D1784325fd847529C";
+exports.nftMarketplaceAddress = "0x725b1E062fAf5a389f3Fa7FAA350dC4299395CfA";
 

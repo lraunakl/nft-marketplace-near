@@ -91,10 +91,10 @@ export default function BuyNFT() {
         <Grid container xs={12} md={6} sx={{padding: 1, marginLeft: 3, flexDirection: "column"}}>
           <div style={{fontSize: 12}}>Creator <span style={{padding: "2px 8px", background: "#e3f2fd", color:"#009688", marginLeft: 4, borderRadius: 12}}>{accounts[0] == creator ? "You" : displayHash(creator)}</span></div>
           <h1 style={{fontSize: 32, fontWeight: 600, marginBottom: 24}}>{metaData && metaData.name}</h1>
-          { owner != "0x0000000000000000000000000000000000000000" ? 
-            <div style={{fontSize: 12, marginBottom: 24}}>Owned by <span style={{padding: "2px 8px", background: "#e3f2fd", color:"#1976d2", marginLeft: 4, borderRadius: 12}}>{accounts[0] == owner ? "You" : displayHash(owner)}</span></div>
+          { owner != "0xAvalanche" ? 
+            <div style={{fontSize: 12, marginBottom: 24}}>Owned by <span style={{padding: "2px 8px", background: "#e3f2fd", color:"#d32f2ff0", marginLeft: 4, borderRadius: 12}}>{accounts[0] == owner ? "You" : displayHash(owner)}</span></div>
             :
-            <div style={{fontSize: 12, marginBottom: 24}}>Seller <span style={{padding: "2px 8px", background: "#e3f2fd", color:"#1976d2", marginLeft: 4, borderRadius: 12}}>{accounts[0] == seller ? "You" : displayHash(seller)}</span></div>
+            <div style={{fontSize: 12, marginBottom: 24}}>Seller <span style={{padding: "2px 8px", background: "#e3f2fd", color:"#d32f2ff0", marginLeft: 4, borderRadius: 12}}>{accounts[0] == seller ? "You" : displayHash(seller)}</span></div>
           }
           <div style={{marginBottom: 16}}>{metaData && metaData.description}</div>
           {metaData.url && <a target="_blank" href={metaData.url}>{metaData.url}</a>}
@@ -105,8 +105,8 @@ export default function BuyNFT() {
             {metaData && metaData.attribute3 &&<Chip label={metaData && metaData.attribute3} />}
           </Stack>
           <div>
-            <div style={{marginBottom: 16}}><span style={{fontWeight: 700, marginRight: 8}}>Price</span>{utils.formatEther(price)} ETH</div>
-            <div><span style={{fontWeight: 700, marginRight: 8}}>Royalty</span>{utils.formatEther(royalty)} ETH</div>
+            <div style={{marginBottom: 16}}><span style={{fontWeight: 700, marginRight: 8}}>Price</span>{utils.formatEther(price)} AVAX</div>
+            <div><span style={{fontWeight: 700, marginRight: 8}}>Royalty</span>{utils.formatEther(royalty)} AVAX</div>
           </div>
           <div style={{marginTop: 32}}>
             {!sold && <CustomButton
@@ -140,7 +140,7 @@ export default function BuyNFT() {
                 autoFocus
                 margin="dense"
                 name="amount"
-                label="Amount in ETH (Aurora)"
+                label="Amount in AVAX"
                 type="number"
                 fullWidth
                 variant="standard"
