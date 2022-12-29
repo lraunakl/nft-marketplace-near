@@ -106,7 +106,7 @@ export default function SaleNFTCard(props) {
         <Typography gutterBottom variant="h7" component="div" sx={{fontWeight: 700}}>
           {truncateString(currentMetaData?.name, 50)}
         </Typography>
-        <div style={{display:"flex",fontSize: 10 }}>Owned by <span style={{padding: "2px 8px", background: "#e3f2fd", color:"#1976d2", marginLeft: 8, borderRadius: 12}}>{accounts && (accounts[0] === owner) ? "You" : displayHash(owner)}</span></div>
+        <div style={{display:"flex",fontSize: 10 }}>Owned by <span style={{padding: "2px 8px", background: "#e3f2fd", color:"#d32f2ff0", marginLeft: 8, borderRadius: 12}}>{accounts && (accounts[0] === owner) ? "You" : displayHash(owner)}</span></div>
         <div style={{width: "100%", display:"inline-flex", flexDirection:"row", justifyContent: "space-between", marginTop: 12}}>
           <div>
             <div style={{display: "inline-flex", alignItems: "center", fontSize: 14}}>

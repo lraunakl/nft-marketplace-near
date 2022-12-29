@@ -19,7 +19,7 @@ export default function CollectionBanner({ isOwner, metaData, isApproved, setIsA
     <Grid container xs={12} md={4} sx={{display:"flex", flexDirection:"column", justifyContent: "center"}}>
       <img src={`https://ipfs.io/ipfs/${metaData?.image}`} alt="" style={{height: 300, objectFit: "cover"}}/>
       <h1 style={{fontSize: 40, fontWeight: 700}}>{metaData.name}</h1>
-      <div style={{fontSize: 12, marginBottom: 24}}>by <span style={{padding: "2px 8px", background: "#e3f2fd", color:"#1976d2", marginLeft: 4, borderRadius: 12}}>{accounts && (accounts[0] == ownerAddress) ? "You" : displayHash(ownerAddress)}</span></div>
+      <div style={{fontSize: 12, marginBottom: 24}}>by <span style={{padding: "2px 8px", background: "#e3f2fd", color:"#d32f2ff0", marginLeft: 4, borderRadius: 12}}>{accounts && (accounts[0] == ownerAddress) ? "You" : displayHash(ownerAddress)}</span></div>
       {/* <h3 style={{marginTop: -16}}>{metaData.subtitle}</h3> */}
       <div>{metaData.description}</div>
       {metaData.url && <a target="_blank" href={metaData.url} style={{marginTop: 16}}>{metaData.url}</a>}

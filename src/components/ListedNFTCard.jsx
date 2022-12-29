@@ -58,7 +58,7 @@ export default function ListedNFTCard(props) {
         <Typography gutterBottom variant="h6" component="div" sx={{fontWeight: 700}}>
           {currentMetaData?.name}
         </Typography>
-        <div style={{display:"flex",fontSize: 10 }}>Owned by <span style={{padding: "2px 8px", background: "#e3f2fd", color:"#1976d2", marginLeft: 8, borderRadius: 12}}>{accounts && (accounts[0] === owner) ? "You" : displayHash(owner)}</span></div>
+        <div style={{display:"flex",fontSize: 10 }}>Owned by <span style={{padding: "2px 8px", background: "#e3f2fd", color:"#d32f2ff0", marginLeft: 8, borderRadius: 12}}>{accounts && (accounts[0] === owner) ? "You" : displayHash(owner)}</span></div>
         {/* <Typography variant="body2" color="text.secondary">
           {currentMetaData?.description}
         </Typography> */}
